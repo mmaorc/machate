@@ -1,0 +1,28 @@
+{
+  "name": "briskchat",
+  "version": "0.1.0",
+  "description": "The quickest way to access ChatGPT on Macos",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmaorc/briskchat.git"
+  },
+  "keywords": [
+    "ChatGPT",
+    "MacOS",
+    "OSX"
+  ],
+  "author": "Maor Cohen",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/mmaorc/briskchat/issues"
+  },
+  "homepage": "https://github.com/mmaorc/briskchat#readme",
+  "devDependencies": {
+    "electron": "^25.0.1"
+  }
+}
