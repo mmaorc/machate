@@ -1,5 +1,6 @@
 {
   "name": "briskchat",
+  "productName": "BriskChat",
   "version": "0.1.0",
   "description": "The quickest way to access ChatGPT on Macos",
   "main": "main.js",
@@ -23,6 +24,9 @@
   },
   "homepage": "https://github.com/mmaorc/briskchat#readme",
   "devDependencies": {
-    "electron": "^25.0.1"
+    "electron": "^22.3.12"
+  },
+  "dependencies": {
+    "menubar": "^9.3.0"
   }
 }
