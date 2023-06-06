@@ -1,6 +1,10 @@
 const { app, Menu, nativeImage, globalShortcut, Tray } = require("electron")
 const path = require("path");
 const { menubar } = require('menubar');
+const { getConfig } = require("./config.js");
+
+const configFilePath = path.join(app.getPath("userData"), 'config.ini');
+const configuration = getConfig(configFilePath);
 
 const icon = nativeImage.createFromPath(path.join(__dirname, "assets/logo.png"))
 
@@ -17,7 +21,7 @@ const addTrayMenu = (tray) => {
 }
 
 const registerShowWindowShortcut = (mb) => {
-    globalShortcut.register("CommandOrControl+f1", () => {
+    globalShortcut.register(configuration.key, () => {
         if (mb.window?.isVisible() || false) {
             mb.hideWindow();
         } else {
@@ -85,6 +89,6 @@ app.on('ready', () => {
                 }
             })
         })
-        mb.window.openDevTools();
+        if (configuration.showDevTools) mb.window.openDevTools();
     });
 })
