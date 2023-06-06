@@ -2,7 +2,7 @@ const fs = require('fs');
 const ini = require('ini');
 
 const defaultConfig = {
-    key: "CommandOrControl+g",
+    key: "CommandOrControl+Shift+g",
     showDevTools: false
 }
 
