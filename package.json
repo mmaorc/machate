@@ -45,7 +45,8 @@
             "universal"
           ]
         }
-      ]
+      ],
+      "icon": "assets/logo_black.png"
     },
     "dmg": {
       "contents": [
