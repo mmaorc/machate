@@ -90,7 +90,7 @@ app.on('ready', () => {
         },
         index: "https://chat.openai.com",
         showDockIcon: false,
-        showOnAllWorkspaces: true,
+        showOnAllWorkspaces: false,
         tooltip: "BriskChat",
         preloadWindow: true,
         icon: icon.resize({ width: 16, height: 16 })
