@@ -6,7 +6,9 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "repository": {
     "type": "git",
@@ -24,10 +26,47 @@
   },
   "homepage": "https://github.com/mmaorc/briskchat#readme",
   "devDependencies": {
-    "electron": "^22.3.12"
+    "electron": "^22.3.12",
+    "electron-builder": "^23.6.0"
   },
   "dependencies": {
     "ini": "^4.1.1",
     "menubar": "^9.3.0"
+  },
+  "build": {
+    "appId": "com.mmaorc.briskchat",
+    "productName": "BriskChat",
+    "mac": {
+      "category": "public.app-category.utilities",
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "universal"
+          ]
+        }
+      ]
+    },
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ],
+      "window": {
+        "width": 540,
+        "height": 405
+      }
+    },
+    "files": [
+      "!**/*.d.ts"
+    ]
   }
 }
