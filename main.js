@@ -1,7 +1,9 @@
-const { app, Menu, nativeImage, globalShortcut, Tray } = require("electron")
+const { app, Menu, nativeImage, globalShortcut, Tray, shell, dialog } = require("electron")
 const path = require("path");
 const { menubar } = require('menubar');
 const { getConfig } = require("./config.js");
+const { productName, version, homepage } = require('./package.json');
+
 
 const configFilePath = path.join(app.getPath("userData"), 'config.ini');
 const configuration = getConfig(configFilePath);
@@ -10,8 +12,28 @@ const icon = nativeImage.createFromPath(path.join(__dirname, "assets/logo.png"))
 
 const isDigit = (str) => /^\d$/.test(str);
 
+const openConfigFileClick = (filePath) => {
+    shell.openPath(filePath)
+        .then(data => {
+            if (data) dialog.showMessageBox({
+                title: "Failed to open the config file",
+                message: "Failed to open the config file due to the following error: " + data,
+            })
+        })
+        .catch(err => {
+            console.error(err)
+        })
+}
+
+const viewGithubRepoClick = () => {
+    shell.openExternal(homepage); 
+}
+
 const addTrayMenu = (tray) => {
     const contextMenu = Menu.buildFromTemplate([
+        { label: `${productName} ${version}` },
+        { label: "Open Config file", click: () => { openConfigFileClick(configFilePath) } },
+        { label: "View Github repo", click: viewGithubRepoClick },
         { label: "Quit", role: "quit" },
     ])
     // We don't use setContextMenu so that left click won't show the menu
