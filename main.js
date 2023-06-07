@@ -26,12 +26,13 @@ const openConfigFileClick = (filePath) => {
 }
 
 const viewGithubRepoClick = () => {
-    shell.openExternal(homepage); 
+    shell.openExternal(homepage);
 }
 
 const addTrayMenu = (tray) => {
     const contextMenu = Menu.buildFromTemplate([
         { label: `${productName} ${version}` },
+        { type: "separator" },
         { label: "Open Config file", click: () => { openConfigFileClick(configFilePath) } },
         { label: "View Github repo", click: viewGithubRepoClick },
         { label: "Quit", role: "quit" },
