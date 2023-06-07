@@ -47,7 +47,7 @@ const addChooseChatFunctionToBrowserWindow = (window) => {
         }
         const chats = nav.querySelectorAll("a");
         const shiftRightIndex = (index == 0) ? 9 : index - 1;
-        const normalizedIndex = shiftRightIndex + 2;
+        const normalizedIndex = shiftRightIndex + 3;
         if (normalizedIndex > chats.length) {
           return;
         }
