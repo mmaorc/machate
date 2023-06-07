@@ -10,8 +10,8 @@ const getConfig = (configFilePath) => {
     const content = fs.existsSync(configFilePath) ? fs.readFileSync(configFilePath).toString() : "";
     const parsed = ini.parse(content)
     return {
-        key: parsed.briskchat.key || defaultConfig.key,
-        showDevTools: parsed.briskchat.showDevTools || defaultConfig.showDevTools
+        key: parsed.briskchat?.key || defaultConfig.key,
+        showDevTools: parsed.briskchat?.showDevTools || defaultConfig.showDevTools
     }
 }
 
