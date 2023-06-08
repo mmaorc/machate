@@ -8,7 +8,7 @@ const { productName, version, homepage } = require('./package.json');
 const configFilePath = path.join(app.getPath("userData"), 'config.ini');
 const configuration = getConfig(configFilePath);
 
-const icon = nativeImage.createFromPath(path.join(__dirname, "assets/logo.png"))
+const icon = nativeImage.createFromPath(path.join(__dirname, "assets/logo_white.png"))
 
 const isDigit = (str) => /^\d$/.test(str);
 
