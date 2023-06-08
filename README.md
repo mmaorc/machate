@@ -19,12 +19,13 @@ It might also work on Windows and Linux but hasn't been tested yet.
 
 ## Usage
 
-```
-git clone https://github.com/mmaorc/machate.git
-cd machate 
-npm install
-npm start
-```
+Download and install the latest release from the [Github releases page](https://github.com/mmaorc/machate/releases/).
+
+As I'm not subscribed to Apple Developer Program I can't notarize this app, so when trying to run it for the first time you will see a message that says:
+"macOS cannot verify that this app is free from malware".
+
+In order to install this anyway, go to `Preferences -> Security and Privacy` and click the `Open Anyway` button.
+You can also compile this app yourself (see Development section).
 
 ### Configuration
 
@@ -39,6 +40,26 @@ showDevTools = false
 
 - `key`: The hotkey for showing/hiding the chat window (default: `CommandOrControl+g`)
 - `showDevTools`: Whether to show the developer tools when the app starts (default: `false`)
+
+## Developement
+
+Clone:
+```
+git clone https://github.com/mmaorc/machate.git
+cd machate 
+npm install
+npm start
+```
+
+Run:
+```
+npm start
+```
+
+Compile:
+```
+npm run dist
+```
 
 ## Contributing
 
