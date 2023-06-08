@@ -86,12 +86,12 @@ app.on('ready', () => {
             height: 800,
             icon: icon,
             alwaysOnTop: true,
-            title: "BriskChat",
+            title: productName,
         },
         index: "https://chat.openai.com",
         showDockIcon: false,
         showOnAllWorkspaces: false,
-        tooltip: "BriskChat",
+        tooltip: productName,
         preloadWindow: true,
         icon: icon.resize({ width: 16, height: 16 })
     })
