@@ -1,6 +1,6 @@
-# Machata
+# Machate
 
-Machata is a desktop application that provides a quick and convenient way to access ChatGPT on macOS. 
+Machate is a desktop application that provides a quick and convenient way to access ChatGPT on macOS. 
 
 This app takes inspiration from [chatgpt-mac](https://github.com/vincelwt/chatgpt-mac), but written from scratch with some much-needed improvements.
 
@@ -18,15 +18,15 @@ It might also work on Windows and Linux but hasn't been tested yet.
 ## Usage
 
 ```
-git clone https://github.com/mmaorc/machata.git
-cd machata 
+git clone https://github.com/mmaorc/machate.git
+cd machate 
 npm install
 npm start
 ```
 
 ### Configuration
 
-You can customize the app's settings by creating a `config.ini` file in the app's user data folder. This folder is located at `~/Library/Application Support/Machata` on macOS.
+You can customize the app's settings by creating a `config.ini` file in the app's user data folder. This folder is located at `~/Library/Application Support/Machate` on macOS.
 
 Here's a sample `config.ini` file:
 

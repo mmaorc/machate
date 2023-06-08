@@ -1,6 +1,6 @@
 {
-  "name": "machata",
-  "productName": "Machata",
+  "name": "machate",
+  "productName": "Machate",
   "version": "0.1.0",
   "description": "The quickest way to access ChatGPT on Macos",
   "main": "main.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mmaorc/machata.git"
+    "url": "git+https://github.com/mmaorc/machate.git"
   },
   "keywords": [
     "ChatGPT",
@@ -22,9 +22,9 @@
   "author": "Maor Cohen",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/mmaorc/machata/issues"
+    "url": "https://github.com/mmaorc/machate/issues"
   },
-  "homepage": "https://github.com/mmaorc/machata#readme",
+  "homepage": "https://github.com/mmaorc/machate#readme",
   "devDependencies": {
     "electron": "^22.3.12",
     "electron-builder": "^24.4.0"
@@ -34,8 +34,8 @@
     "menubar": "^9.3.0"
   },
   "build": {
-    "appId": "com.mmaorc.machata",
-    "productName": "Machata",
+    "appId": "com.mmaorc.machate",
+    "productName": "Machate",
     "mac": {
       "category": "public.app-category.utilities",
       "target": [
