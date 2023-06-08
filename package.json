@@ -1,6 +1,6 @@
 {
-  "name": "briskchat",
-  "productName": "BriskChat",
+  "name": "machata",
+  "productName": "Machata",
   "version": "0.1.0",
   "description": "The quickest way to access ChatGPT on Macos",
   "main": "main.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mmaorc/briskchat.git"
+    "url": "git+https://github.com/mmaorc/machata.git"
   },
   "keywords": [
     "ChatGPT",
@@ -22,9 +22,9 @@
   "author": "Maor Cohen",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/mmaorc/briskchat/issues"
+    "url": "https://github.com/mmaorc/machata/issues"
   },
-  "homepage": "https://github.com/mmaorc/briskchat#readme",
+  "homepage": "https://github.com/mmaorc/machata#readme",
   "devDependencies": {
     "electron": "^22.3.12",
     "electron-builder": "^24.4.0"
@@ -34,8 +34,8 @@
     "menubar": "^9.3.0"
   },
   "build": {
-    "appId": "com.mmaorc.briskchat",
-    "productName": "BriskChat",
+    "appId": "com.mmaorc.machata",
+    "productName": "Machata",
     "mac": {
       "category": "public.app-category.utilities",
       "target": [
