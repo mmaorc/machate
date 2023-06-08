@@ -2,9 +2,9 @@
 
 BriskChat is a desktop application that provides a quick and convenient way to access ChatGPT on macOS. 
 
-This app takes inspiration from [chatgpt-mac](https://github.com/vincelwt/chatgpt-mac), but written from scratch with some much needed improvements.
+This app takes inspiration from [chatgpt-mac](https://github.com/vincelwt/chatgpt-mac), but written from scratch with some much-needed improvements.
 
-It might also work on Windows and Linux but I haven't tested it yet.
+It might also work on Windows and Linux but hasn't been tested yet.
 
 ## Features
 
@@ -12,7 +12,7 @@ It might also work on Windows and Linux but I haven't tested it yet.
 * You don't need any OpenAI API key to use it, just an OpenAI account.
 * Configurable hotkey to show/hide the chat window (default is CMD+Shift+g).
 * The window stays on top until you press your hotkey again, copy-pasting parts of the conversation is easier than ever.
-* You can press CMD+1, CMD+2... to access you first history items.
+* You can press CMD+1, CMD+2... to access your first history items.
 * No analytics, so you can use this on your day job (as long as they allow using ChatGPT).
 
 ## Usage
