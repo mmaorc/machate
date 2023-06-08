@@ -2,6 +2,8 @@
 
 Machate is a desktop application that provides a quick and convenient way to access ChatGPT on macOS. 
 
+![Screenshot](assets/screenshot.png)
+
 This app takes inspiration from [chatgpt-mac](https://github.com/vincelwt/chatgpt-mac), but written from scratch with some much-needed improvements.
 
 It might also work on Windows and Linux but hasn't been tested yet.
