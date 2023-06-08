@@ -31,7 +31,7 @@ You can customize the app's settings by creating a `config.ini` file in the app'
 Here's a sample `config.ini` file:
 
 ```
-key = CommandOrControl+g
+key = CommandOrControl+Shift+g
 showDevTools = false
 ```
 
